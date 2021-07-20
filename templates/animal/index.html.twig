@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AnimalController!{% endblock %}
+
+{% block body %}
+<table class="table">
+    <tr>
+        <th>name</th>
+        <th>type</th>
+        <th>age</th>
+        <th>description</th>
+    </tr>
+    {% for animal in animals %}
+    <tr>
+        <td>{{ animal.name }}</td>
+        <td>{{ animal.type }}</td>
+        <td>{{ animal.age }}</td>
+        <td>{{ animal.description }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
